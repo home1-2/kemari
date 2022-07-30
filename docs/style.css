@@ -9,7 +9,6 @@ ul li {display: inline-block}
  header{
     z-index: 10;
     height: 64px;
-    position: absolute;
     top: 3rem;
     background-color: rgb(180, 170, 170);
     width: 100%;
@@ -22,4 +21,7 @@ ul li{
 }
  table{
     text-align: center;
+ }
+ ul{
+   position: absolute;
  }
