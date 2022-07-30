@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap');
+ div{  
+    color: rgba(12, 65, 238, 0.5);
+}
+ul li {display: inline-block}
+ body{
+    font-family: 'Yuji Boku', serif;
+ }
+ header{
+    z-index: 10;
+    height: 64px;
+    position: absolute;
+    top: 3rem;
+    background-color: rgb(180, 170, 170);
+    width: 100%;
+    text-align: left;
+    z-index: 2;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+ul li{
+    color: rgb(0, 255, 255);
+}
+ table{
+    text-align: center;
+ }

@@ -1,0 +1,24 @@
+// function f(){ 
+//     console.log(127);
+// }
+// function g(x) {
+//     console.log(x);
+    
+// }  
+// function kaijyooo(s) {
+//     let x=1;
+//     for (let i = 1; i <= s ; i++) {
+//          x=x*i;       
+//     }
+//     return x;
+// }
+// function startUp() {
+//   let h=$("#harada")
+//  console.log(h);  
+//  h.html("nagakura") 
+// }
+// $(startUp)
+    // let aiuuee = [12,46,74,32,46];
+    // console.log(aiuuee[0]);
+const URL = "https://script.google.com/macros/s/AKfycbyDXA0mt_tW6u642qXtySBH1Re_aIi938t3gLT7HqIlYG-sc3uobuFqxl3n4d9emzd82A/exec";
+console.log($.getJSON(URL));
