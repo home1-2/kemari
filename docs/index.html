@@ -3,12 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Document</title> <!-- #Note 変更漏れ？ -->
 	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="script.js"></script>
 </head>
 <body>
+	<!--
+		#Note
+		fontタグは現在非推奨です
+		classやidを用いたCSSでの指定を検討しましょう
+		この場合はh1タグでもよいかもしれません
+	-->
 	<font size="5em"><a href="index.html"><ruby>蹴鞠<rt>けまり</rt></ruby>ストラックアウト</a></font>
 	<div class="top-image-area"></div>
 	<header>
@@ -21,6 +27,15 @@
 		</ul>
 	</header>
 	<h2><ruby>蹴鞠<rt>けまり</rt></ruby>ストラックアウトとは？</h2>
+	<!--
+		#Note
+		p1タグは存在しません
+		h1やh2とpを混同しないように注意してください
+
+		#Tips
+		Wordなどの改行マーク(↲)と同じように
+		brタグは行頭でなく行末に記載する方が一般的です
+	-->
 	<p1>今は昔、ここ平安の地では貴族たちが余暇を持て余していた、
 		<br>かの者たちは仕事が少なく、１日の多くを遊びに費やしていた、
 		<br>しかし、この貴族たちは、飽きが早くどの遊びも長くは続かなかった、
@@ -33,6 +48,14 @@
 		<br>すぐにそれは流行し、いつしか技術を競い合うまでにまでなっていた、
 		
 	</p2>
+	<!--
+		#Note
+		h系タグ内は基本的にbrタグを使わないようにしましょう
+		
+		#Tips
+		余白目的で改行を使用するのは避けましょう
+		CSSのmarginプロパティやpaddingプロパティが便利です
+	-->
 	<h3><br>これが蹴鞠ストラックアウトの起源とされている、</h3>
 	<p3>さて、今日はこの遊戯を庶民が体験できる日
 		<br>どのような人が来て、どのような技が発揮されるのか？

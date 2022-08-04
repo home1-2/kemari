@@ -8,6 +8,12 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="js/rank.js"></script>
+	<!--
+		#Note
+		tytle -> title
+		titleタグは一つのファイルに一つまで
+		headタグ内にスタイルの指定はできません
+	-->
 	<tytle><font size="5em"><a href="index.html">蹴鞠ストラックアウト</a></font></tytle>
 </head>
 <body>
@@ -21,17 +27,34 @@
 			<li><a href="other.html">・注意事項、その他</a></li>
 		</ul>
 	</header>
+
+	<!--
+		#Note
+		h2タグ内は単一行が望ましいです
+		"蹴鞠ストラックアウト"をh1タグに移してみては？
+	-->
 	<h2>蹴鞠ストラックアウト
 		<br>ランキング
 	</h2>
 	<p><br>ここでは、ランキングの掲示をおこなってます！
 		<br>みなさんもランキングのトップを目指してみてはいかが？
 	</p>
+	<!--
+		#Note
+		border属性は暫定的なものなので、
+		余裕があればCSS指定に切り替えましょう
+	-->
 	<table border="1" id="r-t">
 		<tr>
 			<th>順位</th><th>お名前</th><th>スコア</th><th>時間</th>
 		</tr>
 	</table>
+
+	<!--
+		#Note
+		ulタグを活用すると簡単に箇条書きが実装できます
+		ただし、header用のスタイルとの競合に気を付けてください
+	-->
 	<p>
 		<br>*同律は新しきものを上にして表示しております。
 		<br>*タイムは結果が入力されたときの時刻となります、
