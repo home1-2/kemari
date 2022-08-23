@@ -16,7 +16,7 @@ div {
 
 header {
     z-index: 10;
-    height: 64px;
+    height: 100px;
     top: 3rem;
     background-color: rgb(180, 170, 170);
     width: 100%;
@@ -41,5 +41,43 @@ table {
     text-align: center;
 }
 body{
-    background-image:url(https://photos.app.goo.gl/QxdUYNx4cgtyzReV6);
+    background-image: url(IMG_4390.jpg);
+    background-size: contain;
+    box-sizing: content-box;
+}
+table {
+    border-collapse: collapse;  
+}
+ 
+th,td {
+    padding: 5px 10px;        
+}
+ 
+th {
+    background-color: #2196F3; 
+    color:  #fff;              
+    font-weight:  normal;       
+    position:  relative;        
+    z-index: 10;              
+}
+ 
+td {
+    background-color:  #c0c9ff;
+    padding-left: 25px;       
+}
+ 
+th::after {
+    content:'';                 
+    position:  absolute;      
+    height: 24px;              
+    width: 24px;               
+    background-color: #2196F3; 
+    transform:  rotate(45deg);  
+    top: 5px;            
+    right: -12px;          
+    z-index:  -1;              
+} 
+ 
+tr {
+    border-bottom:  solid #fff;
 }
