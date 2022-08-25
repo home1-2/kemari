@@ -41,7 +41,7 @@ table {
     text-align: center;
 }
 body{
-    background-image: url(IMG_4390.jpg);
+    background-image: url(kemarihaikei-01.jpeg);
     background-size: contain;
     box-sizing: content-box;
 }
@@ -81,3 +81,13 @@ th::after {
 tr {
     border-bottom:  solid #fff;
 }
+p.Anisakisu{
+  font-size: larger;
+}
+body{
+    text-shadow: 0 0 8px snow;
+}
+img {
+     width: 100%;   
+}
+
