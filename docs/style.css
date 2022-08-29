@@ -4,7 +4,7 @@ body {
     font-family: 'Yuji Boku', serif;
 }
 
-/*
+/*max-content
     #Note
     使用箇所が見つかりません
     不要ならば削除をおすすめします
@@ -15,14 +15,57 @@ div {
 }
 
 header {
-    z-index: 10;
-    height: 64px;
-    top: 3rem;
-    background-color: rgb(180, 170, 170);
+    position: relative;
+    --header-height: 3rem;
+    --stick-size: 1rem;
     width: 100%;
-    text-align: left;
-    z-index: 2;
+    height: calc(var(--header-height) + 24px);
+}
+
+header input[type=checkbox] {
+    display: none;
+}
+
+header label {
+    height: var(--header-height);
+    display: block;
+    position: absolute;
+    right: var(--stick-size);
+    left: var(--stick-size);
+    background-color: rgb(0, 97, 8);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    z-index: 3;
+    text-align: center;
+    font-size: larger;
+}
+
+header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc((var(--header-height) - var(--stick-size)) * 0.5);
+    right: 0;
+    left: 0;
+    height: var(--stick-size);
+    background-color: rgb(216, 198, 99);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+header .header-menu {
+    display: none;
+}
+
+header input:checked ~ .header-menu {
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    top: var(--header-height);
+    right: var(--stick-size);
+    left: var(--stick-size);
+    background-color: rgb(247, 236, 223);
+    border: 4px solid rgb(248, 235, 193);
+    flex-direction: column;
+    align-items: center;
 }
 
 /*
@@ -40,3 +83,54 @@ ul li {
 table {
     text-align: center;
 }
+body{
+    background-image: url(kemarihaikei-01.jpeg);
+    background-size: contain;
+    box-sizing: content-box;
+}
+table {
+    border-collapse: collapse;  
+}
+ 
+th,td {
+    padding: 5px 10px;        
+}
+ 
+th {
+    background-color: #2196F3; 
+    color:  #fff;              
+    font-weight:  normal;       
+    position:  relative;        
+    z-index: 10;              
+}
+ 
+td {
+    background-color:  #c0c9ff;
+    padding-left: 25px;       
+}
+ 
+th::after {
+    content:'';                 
+    position:  absolute;      
+    height: 24px;              
+    width: 24px;               
+    background-color: #2196F3; 
+    transform:  rotate(45deg);  
+    top: 5px;            
+    right: -12px;          
+    z-index:  -1;              
+} 
+ 
+tr {
+    border-bottom:  solid #fff;
+}
+p.Anisakisu{
+  font-size: larger;
+}
+body{
+    text-shadow: 0 0 8px snow;
+}
+img {
+     width: 100%;   
+}
+
