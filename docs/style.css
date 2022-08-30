@@ -10,16 +10,16 @@ body {
     不要ならば削除をおすすめします
     (おそらく練習時の名残)
 */
-div {  
+div.sazae{  
     color: rgba(12, 65, 238, 0.5);
 }
 
 header {
     position: relative;
     --header-height: 3rem;
-    --stick-size: 1rem;
+    --stick-size: 1.5rem;
     width: 100%;
-    height: calc(var(--header-height) + 24px);
+    height: calc(var(--header-height) + 96px);
 }
 
 header input[type=checkbox] {
@@ -28,7 +28,7 @@ header input[type=checkbox] {
 
 header label {
     height: var(--header-height);
-    display: block;
+    display: flex;
     position: absolute;
     right: var(--stick-size);
     left: var(--stick-size);
@@ -37,9 +37,22 @@ header label {
     z-index: 3;
     text-align: center;
     font-size: larger;
+    vertical-align: middle;
+    justify-content: center;
+    flex-direction: column;
+}
+header label::after{
+    content: "御品書";
+    font-weight: bolder;
+    font-size: 2rem;
+    display: block;
 }
 
-header::after {
+header .label-outer {
+    position: relative;
+}
+
+header .label-outer::after {
     content: "";
     display: block;
     position: absolute;
@@ -55,7 +68,7 @@ header .header-menu {
     display: none;
 }
 
-header input:checked ~ .header-menu {
+header input:checked ~ * .header-menu {
     display: flex;
     position: absolute;
     z-index: 5;
@@ -85,8 +98,9 @@ table {
 }
 body{
     background-image: url(kemarihaikei-01.jpeg);
-    background-size: contain;
+    background-size:cover ;
     box-sizing: content-box;
+    background-position: center;
 }
 table {
     border-collapse: collapse;  
@@ -108,19 +122,6 @@ td {
     background-color:  #c0c9ff;
     padding-left: 25px;       
 }
- 
-th::after {
-    content:'';                 
-    position:  absolute;      
-    height: 24px;              
-    width: 24px;               
-    background-color: #2196F3; 
-    transform:  rotate(45deg);  
-    top: 5px;            
-    right: -12px;          
-    z-index:  -1;              
-} 
- 
 tr {
     border-bottom:  solid #fff;
 }
@@ -134,3 +135,32 @@ img {
      width: 100%;   
 }
 
+div.sazae{
+    font-size: 20px;
+}
+.pagetop{
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+}
+.pagetop a{
+    display: block;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #7db4e6;
+    border-radius: 50%;
+    line-height: 50px;
+    background-image:url(Information_Figure1904_1_Illustration-180x143.png) ;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.sinano{
+    color: #c0c9ff;
+}
+div.musasi{
+    border: black;
+    font-size: larger;
+}
