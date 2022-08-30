@@ -8,10 +8,10 @@ hitomath 100
 受付１鳥
 客引き１鳥
 得Tennnyuu１
-neet1
-6ninngru *5 
+neet2
+6ninngru *5 +5nin*1
 
-
-
-
+10~10:45 10:45~11:30 11:30~12:15
+13~13:40 13:40~14:20  14:20~15:00 *2
+計6
 .google.com/macros/s/AKfycbyDXA0mt_tW6u642qXtySBH1Re_aIi938t3gLT7HqIlYG-sc3uobuFqxl3n4d9emzd82A/exec
