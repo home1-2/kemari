@@ -42,7 +42,7 @@ header label {
     flex-direction: column;
 }
 header label::after{
-    content: "御品書　ここをタップ";
+    content: "メニュー";
     font-weight: bolder;
     font-size: 2rem;
     display: block;
